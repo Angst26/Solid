@@ -8,6 +8,8 @@ import solid.ocp.Square;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.Math.round;
+
 public class Main {
     public static void main(String[] args) {
         Canvas canvas = new Canvas();

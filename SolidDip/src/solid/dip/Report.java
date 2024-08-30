@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Report{
     private List<ReportItem> items;	// Отчетные данные
-    private Printer printer;
+    private final Printer printer;
 
 
     public Report(Printer printer){
@@ -15,7 +15,7 @@ public class Report{
 
     // расчет отчетных данных
     public void calculate(){
-        items =  new ArrayList<ReportItem>();
+        items =  new ArrayList<>();
         items.add(new ReportItem("First", (float)5));
         items.add(new ReportItem("Second", (float)6));
     }

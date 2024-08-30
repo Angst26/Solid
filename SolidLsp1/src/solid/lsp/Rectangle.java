@@ -1,6 +1,6 @@
 package solid.lsp;
 
-public class Rectangle {
+public class Rectangle implements RectangleShape {
     private int sideA;
     private int sideB;
 
@@ -9,6 +9,11 @@ public class Rectangle {
         this.setSideB(sideB);
     }
 
+    private void setSideB(int sideB) {
+        this.sideB = sideB;
+    }
+
+    @Override
     public int getSideA() {
         return sideA;
     }
@@ -17,14 +22,12 @@ public class Rectangle {
         return sideB;
     }
 
+    @Override
     public void setSideA(int sideA) {
         this.sideA = sideA;
     }
 
-    public void setSideB(int sideB) {
-        this.sideB = sideB;
-    }
-
+    @Override
     public int getArea() {
         return sideA * sideB;
     }
